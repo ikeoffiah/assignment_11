@@ -29,9 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => dash()))
             }
-          else
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Login()))
+            
         });
   }
 
