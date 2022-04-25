@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "634121759893",
+    "project_id": "mest-assigment-analytics",
+    "storage_bucket": "mest-assigment-analytics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634121759893:android:0d94521ef58b9fc7073f9c",
+        "android_client_info": {
+          "package_name": "com.example.db_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634121759893-vuhqcu8483nsravtrfs55g2qpesjjqvj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBaOE5KB5zAoLHJFxknCqQemcqX47mHNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634121759893-vuhqcu8483nsravtrfs55g2qpesjjqvj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

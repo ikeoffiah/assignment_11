@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:db_test/home_page.dart';
+import 'package:db_test/tracking/tracking_usage.dart';
+import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -12,6 +13,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      navigatorObservers: <NavigatorObserver>[
+        TrackingUsage().appAnalyticsObserver()
+      ],
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

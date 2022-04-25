@@ -1,6 +1,7 @@
 import 'package:db_test/app_database.dart';
 import 'package:db_test/dash.dart';
 import 'package:db_test/login.dart';
+import 'package:db_test/tracking/tracking_usage.dart';
 import 'package:flutter/material.dart';
 import 'package:db_test/db_operations.dart';
 import 'package:db_test/signup.dart';
@@ -19,6 +20,8 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     testDB();
     super.initState();
+
+    TrackingUsage().sendAnalyticsEvent("event");
   }
 
   void testDB() async {
@@ -29,7 +32,6 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => dash()))
             }
-            
         });
   }
 
@@ -55,6 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.only(bottom: 100),
               child: ElevatedButton(
                 onPressed: () {
+                  TrackingUsage().setCurrentScreen("Home");
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Signup()));
                 },
